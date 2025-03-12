@@ -1,0 +1,11 @@
+GET http://localhost:7000
+
+###
+POST http://localhost:7000/chat
+Content-Type: application/json
+
+{
+  "sessionId": "123456",
+  "message": "Quân và dân ta đã anh dũng chiến đấu, bắn rơi 6 máy bay các loại, trong đó có 3 máy bay B-52 vào ngày nào?"
+}
+
