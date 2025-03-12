@@ -67,6 +67,15 @@ app.post("/chat", async (req, res) => {
 
 // Chạy server
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+app.listen(PORT, () => {
+  console.log({
+    projectId,
+    location,
+    agentId,
+    key: process.env.GOOGLE_APPLICATION_CREDENTIALS,
+  });
+
+  console.log(`Server is running on port ${PORT}`);
+});
 
 export default app;
